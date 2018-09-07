@@ -1,0 +1,181 @@
+html,body{
+  margin: 0;
+}
+.quote-heading >h1{
+  color: white;
+  font-size: 4vw;
+  display: inline
+}
+.quote-heading >span{
+  color: white;
+  font-size: 2vw;
+}
+
+.quote-heading{
+  z-index: 2;
+  margin: 30px;
+  position:relative;
+
+}
+.social-links{
+  padding: 6px
+}
+.social-links > ul{
+  list-style: none;
+  display: inline;
+  padding: 0
+}
+nav{
+  display: grid;
+  grid-template-columns: 5fr 5fr .5fr;
+  background-color: #343434;
+  height: 60px;
+}
+.social-links > ul > li{
+  display: inline;
+  margin: 0;
+}
+
+.name-title{
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 5px
+}
+.name > h2, .title {
+  margin: 0;
+  color:white
+}
+.float-right{
+  float: right;
+}
+.test{
+  border: 3px solid red
+}
+.video-background-container{
+  background-image: url("images/program-background.gif");
+  background-repeat: round;
+}
+.overlay{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  opacity: .4;
+  z-index: 1
+}
+.site-container{
+  display: grid;
+  grid-template-rows: 60vh;
+  background-color: #6C6C6C
+}
+
+.main-content-container{
+  display: grid;
+  background-color: white
+}
+
+.technologies-aboutMe-container{
+  display: grid;
+  grid-template-rows: auto;
+  padding: 1em
+}
+.technologies{
+
+}
+
+.education{
+
+}
+
+.contact-form{
+  background-color: #6C6C6C;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-row-gap: 1em;
+  padding: 3%;
+  margin: 0;
+}
+.contact-form > h3{
+  margin: 0;
+  text-align: center;
+}
+.form-box{
+  display: grid;
+  grid-auto-columns: auto;
+
+}
+.projects-container{
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+}
+.cards-container{
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+}
+.footer-container{
+  background-color: #343434;
+  color: white;
+}
+.card-content{
+  padding: 1em;
+}
+.project-image{
+  max-width: 100%
+}
+.social-icon{
+  height: 45px;
+  width: 45px;
+}
+.headshot-icon{
+  height: 60px;
+  width: 60px
+}
+
+
+@media screen and (min-width: 500px){
+  .projects-container{
+    margin: 0 1em
+
+  }
+  .cards-container{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+  }
+  .technologies-aboutMe-container{
+    grid-template-columns: 1fr 1fr;
+    margin: 0 1em
+  }
+  .contact-form{
+    margin: 3% 20%;
+    padding: 3% 7%
+  }
+
+}
+
+
+@media screen and (min-width: 1000px){
+  .main-content-container{
+    margin: 0 75px
+  }
+  nav{
+    margin: 0 75px
+
+  }
+  .cards-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    margin: 0
+  }
+  .technologies-aboutMe-container{
+    grid-template-columns: 1fr 1fr;
+    margin: 0 100px;
+  }
+  .technologies{
+    padding-left: 8em
+  }
+
+}
