@@ -8,6 +8,16 @@ $.fn.scrollView = function () {
 
 
 $('#email-icon').click(function() {
-  console.log("Hello world");
   $('#contact-me-form').scrollView();
+  toggleSocialList();
+});
+
+
+function toggleSocialList() {
+    $(".hamburger-icon").toggleClass("change");
+    $(".social-links").toggle();
+}
+
+$('.hamburger-icon').click(function() {
+  toggleSocialList();
 });
