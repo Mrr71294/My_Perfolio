@@ -70,7 +70,6 @@ nav{
 }
 .site-container{
   display: grid;
-  /* grid-template-rows: 60vh; */
   background-color: white;
 }
 
@@ -85,14 +84,6 @@ nav{
   grid-template-rows: auto;
   padding: 1em
 }
-.technologies{
-
-}
-
-.education{
-
-}
-
 .contact-form{
   background-color: #6C6C6C;
   display: grid;
@@ -125,11 +116,14 @@ nav{
 .footer-container{
   background-color: #343434;
   color: white;
+  padding-bottom: 10px;
 }
 .card-content{
   padding: 1em;
 }
 .project-image{
+  border: solid black 3px;
+  box-sizing: border-box;
   max-width: 100%
 }
 .social-icon{
@@ -203,6 +197,9 @@ nav{
   .hamburger-and-links{
     margin: 4px
   }
+  .technologies{
+    padding-left: 3em
+  }
 
   nav{
     grid-template-columns: 5fr 5fr .5fr;
@@ -232,7 +229,14 @@ nav{
     margin: 0 100px;
   }
   .technologies{
-    padding-left: 8em
+    padding-left: 6em
+  }
+  .sub_tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .sub_tech > div > h3{
+    margin-top: 0;
   }
   .social-links > ul{
     list-style: none;

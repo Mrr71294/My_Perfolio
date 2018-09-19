@@ -9,7 +9,6 @@ $.fn.scrollView = function () {
 
 $('#email-icon').click(function() {
   $('#contact-me-form').scrollView();
-  toggleSocialList();
 });
 
 
